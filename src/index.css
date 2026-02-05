@@ -1,5 +1,5 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+@import 'tailwindcss';
 
 @layer base {
   button:not(:disabled),
@@ -10,7 +10,8 @@
 
 .flipClock {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
 }
 
