@@ -1,4 +1,3 @@
-// usePomodoro.test.tsx
 import { renderHook, act } from '@testing-library/react'
 import { usePomodoro, durations } from './usePomodoro'
 import { vi, it, beforeEach, afterEach, describe } from 'vitest'
@@ -294,7 +293,6 @@ describe('usePomodoro', () => {
         // Complete break
         act(() => {
           result.current.dispatch({ type: 'toggle_pause' })
-          vi.advanceTimersByTime(result.current.state.timeLeft * 1000)
         })
 
         act(() => {
